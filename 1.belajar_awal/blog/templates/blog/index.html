@@ -1,0 +1,22 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{judul}}</title>
+    <link rel="stylesheet" type="text/css" href="{%static "css/style.css"%}">
+</head>
+
+<body>
+    <img id="banner" src="{%static "blog/img/banner_blog.png" %}" alt="">
+    <h1>Selamat Datang di {{judul}}</h1>
+    {%for link,nama in nav%}
+    <li><a href="{{link}}" >{{nama}}</a></li>
+    {%endfor%}
+    <h2>homenya blog contributor {{kontributor}}</h2>
+    <ul>
+        <li><a href="/" title="">home</a></li>
+        <li><a href="/blog/" title="">blog</a></li>
+        <li><a href="/about/" title="">about</a></li>
+    </ul>
+</body>

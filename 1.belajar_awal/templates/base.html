@@ -1,0 +1,64 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Selamat Datang </title>
+    <!-- <link rel="stylesheet" type="text/css" href="{%static "css/style.css"%}"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="{%static "vendor/bootstrap/bootstrap.css"%}"> -->
+    {%include "snippets/styles.html"%}
+</head>
+
+<body>
+    {%include "snippets/navbar.html"%}
+    <!-- WELCOME
+        ================================================== -->
+    <section class="pt-4 pt-md-11">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+                    <!-- Image -->
+                    <img src="{%static "img/banner_home.png" %}" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0"
+                        alt="..." data-aos="fade-up" data-aos-delay="100">
+
+                </div>
+                <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+
+                    <!-- Heading -->
+                    <h1 class="display-3 text-center text-md-left">
+                        {% block header %}
+
+                        {%endblock header%}
+                    </h1>
+
+                    <!-- Text -->
+                    <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
+                        Build a beautiful, modern website with flexible Bootstrap components built from scratch.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="text-center text-md-left">
+                        <a href="overview.html" class="btn btn-primary shadow lift mr-1">
+                            View all pages <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+                        </a>
+                        <a href="docs/index.html" class="btn btn-primary-soft lift">
+                            Documentation
+                        </a>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+    <!-- <img id="banner" src="{%static "img/banner_home.png" %}" alt="" width="100%"> -->
+
+    <h1>Selamat datang di website kami</h1>
+    <p>website ini dibuat dengan menggunakan Django</p>
+    {{con}}
+
+    {%include "snippets/scripts.html"%}
+</body>
+
+</html>

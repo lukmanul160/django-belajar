@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block page_title %}
+{{page_title}}
+{% endblock page_title %}
+
+{% block content %}
+{{page_title}}
+
+{% for post in posts %}
+    <h1>{{post.judul}}</h1>
+    <p>{{post.body}}</p>
+    <p>{{post.category}}</p>
+{% endfor %}
+
+{% endblock content %}
